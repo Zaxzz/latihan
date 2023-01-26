@@ -30,7 +30,7 @@ class _ChatDetailState extends State<ChatDetail> {
                       style: const TextStyle(color: Colors.white),
                     ),
                   ),
-                  height: 50,
+                  height: 75,
                   width: 200,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
@@ -40,9 +40,9 @@ class _ChatDetailState extends State<ChatDetail> {
                     ),
                     gradient: LinearGradient(
                       colors: [
-                        Colors.blue.shade400,
-                        Colors.blue.shade500,
-                        Colors.blue.shade800,
+                        Color.fromARGB(255, 7, 48, 255),
+                        Color.fromARGB(255, 7, 48, 255),
+                        Color.fromARGB(255, 7, 48, 255),
                       ],
                     ),
                   ),
@@ -62,10 +62,10 @@ class _ChatDetailState extends State<ChatDetail> {
                       // ),
                     ),
                   ),
-                  height: 50,
+                  height: 75,
                   width: 200,
                   decoration: BoxDecoration(
-                      color: Colors.grey[300],
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
                 ),
               ),
@@ -82,7 +82,7 @@ class _ChatDetailState extends State<ChatDetail> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
-                  height: 50,
+                  height: 75,
                   width: 200,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
@@ -92,9 +92,8 @@ class _ChatDetailState extends State<ChatDetail> {
                     ),
                     gradient: LinearGradient(
                       colors: [
-                        Colors.blue.shade400,
-                        Colors.blue.shade500,
-                        Colors.blue.shade800,
+                      Color.fromARGB(255, 7, 48, 255),
+                      Color.fromARGB(255, 7, 48, 255),
                       ],
                     ),
                   ),
@@ -114,10 +113,10 @@ class _ChatDetailState extends State<ChatDetail> {
                       // ),
                     ),
                   ),
-                  height: 50,
+                  height: 75,
                   width: 200,
                   decoration: BoxDecoration(
-                      color: Colors.grey[300],
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
                 ),
               ),
@@ -134,7 +133,7 @@ class _ChatDetailState extends State<ChatDetail> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
-                  height: 50,
+                  height: 75,
                   width: 200,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
@@ -144,9 +143,8 @@ class _ChatDetailState extends State<ChatDetail> {
                     ),
                     gradient: LinearGradient(
                       colors: [
-                        Colors.blue.shade400,
-                        Colors.blue.shade500,
-                        Colors.blue.shade800,
+                      Color.fromARGB(255, 7, 48, 255),
+                      Color.fromARGB(255, 7, 48, 255),
                       ],
                     ),
                   ),
@@ -166,10 +164,10 @@ class _ChatDetailState extends State<ChatDetail> {
                       // ),
                     ),
                   ),
-                  height: 50,
+                  height: 75,
                   width: 200,
                   decoration: BoxDecoration(
-                      color: Colors.grey[300],
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
                 ),
               ),
@@ -186,7 +184,7 @@ class _ChatDetailState extends State<ChatDetail> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
-                  height: 50,
+                  height: 75,
                   width: 200,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
@@ -196,9 +194,8 @@ class _ChatDetailState extends State<ChatDetail> {
                     ),
                     gradient: LinearGradient(
                       colors: [
-                        Colors.blue.shade400,
-                        Colors.blue.shade500,
-                        Colors.blue.shade800,
+                        Color.fromARGB(255, 7, 48, 255),
+                        Color.fromARGB(255, 7, 48, 255),
                       ],
                     ),
                   ),
@@ -229,21 +226,14 @@ class _ChatDetailState extends State<ChatDetail> {
           IconButton(
             onPressed: () {},
             icon: const Icon(
-              Icons.call,
+              Icons.search,
               color: Colors.blue,
             ),
           ),
           IconButton(
             onPressed: () {},
             icon: const Icon(
-              Icons.video_call,
-              color: Colors.blue,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.info,
+              Icons.more_vert_sharp,
               color: Colors.blue,
             ),
           ),
@@ -251,14 +241,9 @@ class _ChatDetailState extends State<ChatDetail> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            CircleAvatar(
-              backgroundImage: AssetImage(widget.image),
-              radius: 25,
-            ),
             Column(
               children: [
                 SizedBox(
-                  width: 100,
                   child: Text(
                     widget.fullName,
                     style: const TextStyle(
@@ -271,7 +256,8 @@ class _ChatDetailState extends State<ChatDetail> {
                 ),
                 Text(
                   "Active 5 hours ago",
-                  style: TextStyle(fontSize: 12, color: Colors.grey[400]),
+                  style: TextStyle(fontSize: 12, color: Colors.grey[400],
+                  ),
                 ),
               ],
             ),
@@ -286,12 +272,9 @@ class _ChatDetailState extends State<ChatDetail> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             const Icon(
-              Icons.menu,
-              color: Colors.blue,
+              Icons.add,
+              color: Colors.grey,
             ),
-            const Icon(Icons.camera, color: Colors.blue),
-            const Icon(Icons.photo_album, color: Colors.blue),
-            const Icon(Icons.mic, color: Colors.blue),
             Container(
               height: 40,
               width: 160,
@@ -302,7 +285,7 @@ class _ChatDetailState extends State<ChatDetail> {
                 children: [
                   Container(
                     height: 40,
-                    width: 150,
+                    width: 180,
                     decoration: BoxDecoration(
                         color: Colors.grey[400],
                         borderRadius: BorderRadius.circular(10)),
@@ -319,8 +302,8 @@ class _ChatDetailState extends State<ChatDetail> {
               ),
             ),
             const Icon(
-              Icons.favorite,
-              color: Colors.red,
+              Icons.send_rounded,
+              color:  Color.fromARGB(255, 7, 48, 255),
             ),
           ],
         ),
